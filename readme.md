@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Cereceres/sleeping.svg?branch=master)](https://travis-ci.org/Cereceres/sleeping)
 ## Install
 This method block the nodejs event loop
 ```bash
