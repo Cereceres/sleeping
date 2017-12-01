@@ -8,6 +8,6 @@ $ npm install waiting
 ### waiting.for(delay) -> undefined
 the param is the time that is event loop will be blocked
 
-### waiting.for(delay) -> Promise
+### waiting.forAsync(delay) -> Promise
 the param is the time that is event loop will be blocked, return a promise that is 
 resolved when the block is resolved.
