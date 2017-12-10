@@ -1,14 +1,14 @@
-'use strict'
+'use strict';
 module.exports = {
-    for: function (time) {
-        time += Date.now();
- 	    while (Date.now() < time) { }
+    for(time) {
+        const sleep = time + Date.now();
+ 	    while (Date.now() < sleep) {}
     },
-    forAsync: function (time) {
-        return new Promise(function (resolve) {
-            time += Date.now()
-             while (Date.now() < time) { }
-            resolve()    
-        })
+    forAsync(time) {
+        return new Promise((resolve) => {
+            const sleep = time + Date.now();
+            while (Date.now() < sleep) {}
+            resolve();
+        });
     }
-}
+};
