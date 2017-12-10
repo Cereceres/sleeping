@@ -7,15 +7,15 @@ describe('test to wait module', function() {
         const time1 = Date.now();
         wait.for(10000);
         const time2 = Date.now();
-        assert(time2 - time1 >= 3000);
+        assert(time2 - time1 >= 10000);
     });
 
     it('shoul block the flow', (done) => {
         const time1 = Date.now();
-        wait.forAsync(3000)
+        wait.forAsync(6000)
             .then(() => {
                 const time2 = Date.now();
-                assert(time2 - time1 >= 3000);
+                assert(time2 - time1 >= 6000);
                 done();
             });
     });
