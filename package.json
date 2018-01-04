@@ -1,0 +1,27 @@
+{
+  "name": "sleeping",
+  "version": "0.0.1",
+  "description": "sleep the flow",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/sleeping.git"
+  },
+  "keywords": [
+    "sleep",
+    "loop",
+    "stop"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cereceres/sleeping/issues"
+  },
+  "homepage": "https://github.com/Cereceres/sleeping#readme"
+}
