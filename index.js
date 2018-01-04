@@ -5,10 +5,8 @@ module.exports = {
  	    while (Date.now() < sleep) {}
     },
     forAsync(time) {
-        return new Promise((resolve) => {
             const sleep = time + Date.now();
             while (Date.now() < sleep) {}
-            resolve();
-        });
+            return Promise.resolve()
     }
 };
