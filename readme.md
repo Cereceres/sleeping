@@ -2,7 +2,7 @@
 
 # Usage
 ```js
-const waiting = require('waiting')
+const sleeping = require('sleeping')
 // sync mode
 const time1 = Date.now();
 wait.for(10000);
@@ -35,12 +35,12 @@ async() =>{
 ## Install
 This method block the nodejs event loop
 ```bash
-$ npm install waiting
+$ npm install sleeping
 ```
-## API Documentation waiting -> Object
-### waiting.for(delay) -> undefined
+## API Documentation sleeping -> Object
+### sleeping.for(delay) -> undefined
 the param is the time that is event loop will be blocked
 
-### waiting.forAsync(delay) -> Promise
+### sleeping.forAsync(delay) -> Promise
 the param is the time that is event loop will be blocked, return a promise that is 
 resolved when the block is resolved.

@@ -1,6 +1,6 @@
 {
   "name": "sleeping",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "sleep the flow",
   "main": "index.js",
   "directories": {
