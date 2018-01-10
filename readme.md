@@ -41,6 +41,5 @@ $ npm install sleeping
 ### sleeping.for(delay) -> undefined
 the param is the time that is event loop will be blocked
 
-### sleeping.forAsync(delay) -> Promise
-the param is the time that is event loop will be blocked, return a promise that is 
-resolved when the block is resolved.
+### sleeping.forAsync(delay,cb) -> Promise
+the param is the time that is event loop will be blocked, if the cb is not given return a promise that is resolved when the block is resolved.
