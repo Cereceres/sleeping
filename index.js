@@ -3,9 +3,10 @@ module.exports = {
         const sleep = time + Date.now();
  	    while (Date.now() < sleep) {}
     },
-    forAsync(time) {
+    forAsync(time, cb) {
         const sleep = time + Date.now();
         while (Date.now() < sleep) {}
-        return Promise.resolve();
+        if (typeof cb === 'function') return cb(null, time);
+        return Promise.resolve(time);
     }
 };
