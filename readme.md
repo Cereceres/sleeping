@@ -2,6 +2,7 @@
 
 # Usage
 ```js
+const waiting = require('waiting')
 // sync mode
 const time1 = Date.now();
 wait.for(10000);
